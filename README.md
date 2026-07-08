@@ -219,3 +219,47 @@ This project demonstrates practical ability in:
 - AWS SNS integration
 - Cloud infrastructure concepts
 - Git workflow and documentation
+
+---
+
+## Screenshots
+
+The screenshots below show the monitoring system running, detecting failures, recovering successfully, and sending AWS SNS email notifications.
+
+### Docker Container Running
+
+This screenshot shows the Nginx Docker container running successfully on the EC2 instance.
+
+![Docker container running](screenshots/docker-running.png)
+
+---
+
+### Failure Detection
+
+This screenshot shows the monitoring script detecting that the Docker container has stopped.
+
+![Failure detection](screenshots/failure-detection.png)
+
+---
+
+### Recovery Detection
+
+This screenshot shows the monitoring script detecting that the Docker container has recovered and returned to a healthy state.
+
+![Recovery detection](screenshots/recovery-detection.png)
+
+---
+
+### SNS Email Alert - Service Unhealthy
+
+This screenshot shows the AWS SNS email notification sent when the service became unhealthy.
+
+![SNS unhealthy alert](screenshots/SNS-email-UNHEALTHY.png)
+
+---
+
+### SNS Email Alert - Service Healthy
+
+This screenshot shows the AWS SNS email notification sent when the service recovered.
+
+![SNS healthy alert](screenshots/SNS-email-HEALTHY.png)
